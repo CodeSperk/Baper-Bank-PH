@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+section{
+  background-color: rgb(248, 247, 246);
+  padding: 24px 48px;
+  border-radius: 12px;
+  box-shadow: 4px 6px 4px #e4e0e5, -4px -6px 4px #f2f0f3 ;
+}
+h1{
+ font-size: 64px;
+ font-weight: 700;
+ text-align: center;
+}
+h1 > span{
+  color:#b732df;
+}
+
+#balance-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 72px 0 24px;
+}
+
+#balance-container div{
+  background-color: rgb(190, 203, 217);
+  width: 33%;
+  padding: 32px 72px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 4px 6px 4px #b732df, -4px -6px 4px #b732df ;
+}
+#balance-container div h3{
+  font-size: 28px;
+  text-decoration: underline;
+  color: #651c7c;
+}
+#balance-container div p{
+  font-size: 36px;
+  margin-top: 12px;
+  color: #651c7c;
+}
+#balance-container #balance{
+  width: 33%;
+  background-color: #d4a3e2;
+  box-shadow: 4px 6px 4px #74148b, -4px -6px 4px #53056b ;
+}
+
+#current-transection {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+#current-transection div{
+  background-color: #dfb8e9;
+  width: 50%;
+  border-radius: 8px;
+  padding: 32px 20px ;
+}
+#current-transection div h3{
+  font-size: 28px;
+  color: #651c7c;
+  border-bottom: 2px solid #651c7c;
+  width: fit-content;
+  margin-bottom: 24px;
+}
+#current-transection div input{
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+#current-transection div button{
+  padding: 8px 16px;
+  background-color: #b732df;
+  border: none;
+  color: #f2f0f3;
+  font-size: 16px;
+  border-radius: 4px;
+}
+

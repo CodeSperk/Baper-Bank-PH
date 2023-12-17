@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bap Er Bank</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <section>
+    <h1>Functional <span>Bap er Bank</span></h1>
+    <div id="balance-container">
+      <div id="deposited">
+        <h3 class="">Deposited</h3>
+        <p>$ <span id="current-deposited-balance">00</span></p>
+      </div>
+      
+      <div id="withdrawn">
+        <h3>Withdrawn</h3>
+        <p>$ <span id="current-withdrawn-balance">00</span></p>
+      </div>
+      <div id="balance">
+        <h3>Balance</h3>
+        <p>$ <span id="current-balance">1000</span></p>
+      </div>
+    </div>
+
+    <div id="current-transection">
+      <div id="deposit">
+        <h3>Please Deposit</h3>
+        <input id="deposit-amount" type="text" placeholder="Enter deposit amount here..."><br>
+        <button id="deposit-btn">Deposit</button>
+      </div>
+      <div id="withdraw">
+        <h3>Please Withdraw</h3>
+        <input id="withdraw-amount" type="text" placeholder="Enter withdraw amount here..."><br>
+        <button id="withdraw-btn">Withdraw</button>
+      </div>
+    </div>
+  </section>
+  
+
+  <script src="./utilities.js"></script>
+  <script src="./deposit.js"></script>
+  <script src="./withdraw.js"></script>
+</body>
+</html>
