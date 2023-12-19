@@ -1,17 +1,12 @@
-// step-01: add click event handler with the submit button
-document.getElementById("btn-submit").addEventListener("click", function () {
-  // set-02: get email and password value
-  const emailField = document.getElementById("email");
-  const email = emailField.value;
+function getValueById(inputId){
+  return document.getElementById(inputId).value;
+}
 
-  const passField = document.getElementById("password");
-  const password = passField.value;
- 
+document.getElementById('btn-submit').addEventListener('click', function(){
+ const email = getValueById('email');
+ const password = getValueById('password');
 
-  if (email === "inbx.mahbub@gmail.com" && password === "Mahbub0692") {
-    window.location.href="./statement.html";
-  } else {
-    alert("Invalid User");
-  }
-
-});
+ if(email === "inbx.mahbub@gmail.com" && password === "12345"){
+  window.location.href = "./statement.html";
+ }
+})

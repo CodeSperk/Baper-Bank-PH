@@ -1,14 +1,29 @@
+// document.getElementById('deposit-btn').addEventListener('click', function(){
+//   const newDepositAmount = getInputValueById('deposit-amount');
+
+//   //previous deposit Balance
+//   const previousDepositBalance = getPreviousById('current-deposited-balance');
+//   const totalDepositBalance = newDepositAmount + previousDepositBalance;
+//   setTotalValueById('current-deposited-balance', totalDepositBalance);
+
+
+//   //previous total Balance
+//   const previousTotalBalance = getPreviousById('current-balance');
+//   const totalBalance = newDepositAmount + previousTotalBalance;
+//   setTotalValueById('current-balance', totalBalance);
+// })
+
+
 document.getElementById('deposit-btn').addEventListener('click', function(){
-  const newDepositAmount = getInputValueById('deposit-amount');
+  const depositValue = getTransectionById('deposit-amount');
+  // console.log(depositValue);
 
-  //previous deposit Balance
-  const previousDepositBalance = getPreviousById('current-deposited-balance');
-  const totalDepositBalance = newDepositAmount + previousDepositBalance;
-  setTotalValueById('current-deposited-balance', totalDepositBalance);
+  const previousDepositedBalance = getPreviousById('current-deposited-balance');
+  const totalDeposit = previousDepositedBalance + depositValue;
+  setTotalById('current-deposited-balance', totalDeposit)
 
-
-  //previous total Balance
   const previousTotalBalance = getPreviousById('current-balance');
-  const totalBalance = newDepositAmount + previousTotalBalance;
-  setTotalValueById('current-balance', totalBalance);
+  const totalBalance = previousTotalBalance + depositValue;
+  setTotalById('current-balance', totalBalance)
+
 })
